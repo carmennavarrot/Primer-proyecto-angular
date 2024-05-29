@@ -1,0 +1,15 @@
+<div class="padre">
+    <h1>Componente padre {{contador}}</h1>
+    <!-- componentes hijo -->
+    <app-hijo 
+    [colorHijo]="color"
+    [nombre]="'hijo1'"
+    [contadorHijo]="contador">
+    </app-hijo>
+    <!-- [aqui cambio el valor de la variable de nombre que esta en hijo.ts] -->
+    <app-hijo 
+    [nombre]="'hijo2'" 
+    [contadorHijo]="contador">
+</app-hijo>
+</div>
+<!-- para importar app-hijo tengo que meter en import padre.component.ts llamo a hijo y en html llamo a hijo con el nombre del selctor de hijo -->
